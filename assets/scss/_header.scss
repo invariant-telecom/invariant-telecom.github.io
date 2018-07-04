@@ -32,6 +32,10 @@
                 display: block !important;
             }
         }
+        .navbar-logo{
+            max-height: 25px;
+            margin: 0 10px;
+        }
         .navbar-nav{
             display: inline-block;
             text-align: right;
@@ -41,9 +45,9 @@
                 a{
                     font-size: 13px;
                     font-family: $rob;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    color: #fff;
+                    font-weight: normal;
+                    text-transform: capitalize;
+                    color: #000;
                     letter-spacing: .65px;
                     padding: 0px;
                     line-height: 118px;
@@ -118,7 +122,7 @@
         top: -70px;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, .6);  
+        background: rgba(255, 255, 255, .8);  
         transform: translateY(70px);
         transition: transform 500ms ease, background 500ms ease;
         -webkit-transition: transform 500ms ease, background 500ms ease;
