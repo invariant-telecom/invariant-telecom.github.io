@@ -11,29 +11,126 @@
         padding: 0px;
         border-radius: 0px;
         background-color: transparent !important;
+
         .navbar-toggler{
             border: none;
             border-radius: 0px;
             padding: 0px;
-            span{
-                height: 3px;
-                width: 25px;
-                display: block;
-                background: $dip;
-                margin-bottom: 3px;
-                &:last-child{
-                    margin-bottom: 0px;
-                }
-            }
         }
+
+        /* hamburger */
+        #hamburger{
+            width: 30px;
+            margin: 0 15px 15px 0;
+            position: relative;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .5s ease-in-out;
+            -moz-transition: .5s ease-in-out;
+            -o-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+            cursor: pointer;
+        }
+        #hamburger span {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 40%;
+            background: $pfont_2;
+            opacity: 1;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
+            -o-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
+        }
+          
+        #hamburger span:nth-child(even){
+            left: 40%;
+            border-radius: 0 9px 9px 0;
+        }
+          
+        #hamburger span:nth-child(odd){
+            left:0px;
+            border-radius: 9px 0 0 9px;
+        }
+          
+        #hamburger span:nth-child(1), #hamburger span:nth-child(2){
+            top: 0px;
+        }
+          
+        #hamburger span:nth-child(3), #hamburger span:nth-child(4){
+            top: 6px;
+        }
+          
+        #hamburger span:nth-child(5), #hamburger span:nth-child(6){
+            top: 12px;
+        }
+          
+        #hamburger.open span:nth-child(1),#hamburger.open span:nth-child(6){
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        #hamburger.open span:nth-child(2),#hamburger.open span:nth-child(5){
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+          
+        #hamburger.open span:nth-child(1) {
+            left: 4px;
+            top: 2px;
+        }
+          
+        #hamburger.open span:nth-child(2) {
+            left: calc(50% - 4px);
+            top: 2px;
+        }
+          
+        #hamburger.open span:nth-child(3) {
+            left: -50%;
+            opacity: 0;
+        }
+          
+        #hamburger.open span:nth-child(4) {
+            left: 100%;
+            opacity: 0;
+        }
+          
+        #hamburger.open span:nth-child(5) {
+            left: 4px;
+            top: 9px;
+        }
+          
+        #hamburger.open span:nth-child(6) {
+            left: calc(50% - 4px);
+            top: 9px;
+        }
+
         .navbar-collapse{
             @media (min-width: 992px){
                 text-align: right;
                 display: block !important;
             }
+            @media (max-width: 991px){
+                background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .9));
+            }
+        }
+        .navbar-brand{
+            font-size: 25px;
+            font-weight: 500;
+            color: $pfont_2;
         }
         .navbar-logo{
-            max-height: 25px;
+            max-height: 32px;
             margin: 0 10px;
         }
         .navbar-nav{
@@ -43,15 +140,20 @@
                 display: inline-block;
                 margin-right: 55px;
                 a{
-                    font-size: 13px;
+                    font-size: 15px;
                     font-family: $rob;
-                    font-weight: normal;
+                    font-weight: 500;
                     text-transform: capitalize;
-                    color: #000;
+                    color:$white;
                     letter-spacing: .65px;
                     padding: 0px;
                     line-height: 118px;
                     @include transition;
+                }
+                &.active{
+                    a{
+                        color: $accentRed;
+                    }
                 }
                 &:last-child{
                     margin-right: 0px;
@@ -63,11 +165,11 @@
                             transition: all 400ms ease-out;
                             display: block;
                             transform-origin: 50% 0;
-                            min-width: 250px;
-                            background: #171717;
+                            min-width: 200px;
+                            background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .9));
                             left: auto;
                             right: 0px;
-                            top: 90%;
+                            top: 97%;
                             border-radius: 0px;
                             border: none;
                             padding: 30px 0px 30px 0px;
@@ -80,17 +182,17 @@
                             a{
                                 display: block;
                                 line-height: 38px;
-                                color: #fff;
+                                color: $pfont_2;
                                 font-family: $rob;
                                 letter-spacing: .48px;
-                                font-size: 16px;
+                                font-size: 15px;
                                 padding: 0px 30px;
                                 text-transform: inherit;
                                 @include transition;
                                 font-weight: normal;
                                 text-shadow: none;
                             }
-                            &:hover{
+                            &:hover &.active{
                                 a{
                                     color: $baseColor;
                                 }
@@ -108,9 +210,9 @@
                         }
                     }
                 }
-                &:hover, &.active{
+                &:hover{
                     a{
-                        color: $dip;
+                        color: $accentRed;
                     }
                 }
             }
@@ -122,16 +224,31 @@
         top: -70px;
         left: 0;
         right: 0;
-        background: rgba(255, 255, 255, .8);  
+        background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .6));  
         transform: translateY(70px);
         transition: transform 500ms ease, background 500ms ease;
         -webkit-transition: transform 500ms ease, background 500ms ease;
         z-index: 999999;
         .navbar{
+            .navbar-brand{
+                font-size: 20px;
+            }
+            .navbar-logo{
+                max-height: 25px;
+                margin: 0 10px 0 5px;
+            }
             .navbar-nav{
                 li{
                     a{
-                        line-height: 70px;
+                        color: $pfont_2;
+                        @media(min-width: 992px){
+                            line-height: 70px;
+                        }
+                    }
+                    &:hover, &.active{
+                        a{
+                            color: $accentBlue;
+                        }
                     }
                 }
             }

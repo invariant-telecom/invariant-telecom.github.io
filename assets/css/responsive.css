@@ -102,10 +102,11 @@
         display: block;
         line-height: 50px;
         padding: 0px 15px;
+        color: #5B5B5B;
         border-bottom: 1px solid rgba(255, 255, 255, .05);
     }
     .main_menu_area .navbar .navbar-nav li:hover a, .main_menu_area .navbar .navbar-nav li.active a {
-        color: #97ccfe;
+        color: #F16B6D;
     }
     .main_menu_area .navbar .navbar-nav li a:focus{
         color: #97ccfe;
@@ -118,7 +119,7 @@
         text-align: left;
     }
     .main_menu_area .navbar .navbar-collapse {
-        background: rgba(0, 0, 0, 1);
+        background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .9));;
         max-height: 306px;
         overflow-y: scroll;
     }

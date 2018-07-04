@@ -22,7 +22,8 @@
             }
         }
         .tp-bullets{
-            left: calc(50% - 970px) !important;
+            // left: calc(50% - 65%) !important;
+            margin-left: 25px;
             .tp-bullet{
                 height: 10px;
                 width: 10px;
