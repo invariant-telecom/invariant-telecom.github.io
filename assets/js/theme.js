@@ -44,27 +44,27 @@
                     touch:{
                         touchenabled:"on"
                     },
-                    arrows: {
-                        style:"normal",
-                        enable:true,
-                        hide_onmobile:true,
-                        hide_under:992,
-                        hide_onleave:true,
-                        hide_delay:200,
-                        hide_delay_mobile:1200,
-                        left: {
-                            h_align: "left",
-                            v_align: "center",
-                            h_offset: 0,
-                            v_offset: 0
-                        },
-                        right: {
-                            h_align: "right",
-                            v_align: "center",
-                            h_offset: 0,
-                            v_offset: 0
-                        }
-                    },
+                    // arrows: {
+                    //     style:"normal",
+                    //     enable:true,
+                    //     hide_onmobile:true,
+                    //     hide_under:992,
+                    //     hide_onleave:true,
+                    //     hide_delay:200,
+                    //     hide_delay_mobile:1200,
+                    //     left: {
+                    //         h_align: "left",
+                    //         v_align: "center",
+                    //         h_offset: 0,
+                    //         v_offset: 0
+                    //     },
+                    //     right: {
+                    //         h_align: "right",
+                    //         v_align: "center",
+                    //         h_offset: 0,
+                    //         v_offset: 0
+                    //     }
+                    // },
                     bullets: {
                         enable:true,
                         hide_onmobile:true,
@@ -74,8 +74,8 @@
                         direction:"vertical",
                         h_align:"left",
                         v_align:"bottom",
-                        h_offset:380,
-                        v_offset:0,
+                        h_offset:30,
+                        v_offset:400,
                         space:10,
                         tmp: "",
                     },
