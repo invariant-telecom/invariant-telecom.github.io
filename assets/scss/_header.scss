@@ -152,7 +152,7 @@
                 }
                 &.active{
                     a{
-                        color: $accentBlue;
+                        color: $accentRed;
                     }
                 }
                 &:last-child{
@@ -192,9 +192,9 @@
                                 font-weight: normal;
                                 text-shadow: none;
                             }
-                            &:hover &.active{
+                            &:hover {
                                 a{
-                                    color: $baseColor;
+                                    color: $accentRed;
                                 }
                             }
                         }
@@ -212,7 +212,7 @@
                 }
                 &:hover{
                     a{
-                        color: $accentBlue;
+                        color: $accentRed;
                     }
                 }
             }
@@ -248,6 +248,17 @@
                     &:hover, &.active{
                         a{
                             color: $accentBlue;
+                        }
+                    }
+                    &.submenu{
+                        .dropdown-menu{
+                            li{
+                                &:hover {
+                                    a{
+                                        color: $accentBlue;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

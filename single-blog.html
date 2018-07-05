@@ -4,28 +4,48 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
         
-        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+        <link rel="icon" href="assets/img/fav-icon.png" type="image/x-icon" />
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/img/favs/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/favs/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/favs/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/favs/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/img/favs/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/img/favs/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/img/favs/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/img/favs/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="assets/img/favs/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="assets/img/favs/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="assets/img/favs/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="assets/img/favs/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="assets/img/favs/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="assets/img/favs/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="assets/img/favs/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="assets/img/favs/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="assets/img/favs/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="assets/img/favs/mstile-310x310.png" />
+
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Sierra</title>
+        <title>Invariant Telecom</title>
 
         <!-- Icon css link -->
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         
         <!-- Rev slider css -->
-        <link href="vendors/revolution/css/settings.css" rel="stylesheet">
-        <link href="vendors/revolution/css/layers.css" rel="stylesheet">
-        <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
+        <link href="assets/vendors/revolution/css/settings.css" rel="stylesheet">
+        <link href="assets/vendors/revolution/css/layers.css" rel="stylesheet">
+        <link href="assets/vendors/revolution/css/navigation.css" rel="stylesheet">
         
         <!-- Extra plugin css -->
-        <link href="vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-        <link href="vendors/magnify-popup/magnific-popup.css" rel="stylesheet">
+        <link href="assets/vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
         
-        
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/responsive.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,8 +59,11 @@
         <!--================Header Menu Area =================-->
         <header class="main_menu_area">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#"><img class="navbar-logo" src="assets/img/logo.png" alt="">Invariant Telecom</a>
+                <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -48,21 +71,21 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                        <li class="nav-item dropdown submenu active">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">Why Invariant</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Case Studies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                        <li class="nav-item dropdown submenu">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Blog
+                            Career
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-                                <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Job Offering</a></li>
+                                <li class="nav-item"><a class="nav-link" href="single-blog.html">Internship</a></li>
+                                <li class="nav-item"><a class="nav-link" href="elements.html">Life at Invariant</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://medium.com/invariant-telecom" target="_blank"><span class="blog_btn">Blog</span></a></li>
                     </ul>
                 </div>
             </nav>
@@ -88,7 +111,7 @@
                         <div class="single_blog_inner">
                             <div class="s_blog_main">
                                 <div class="blog_img">
-                                    <img class="img-fluid" src="img/blog/blog-1.jpg" alt="">
+                                    <img class="img-fluid" src="assets/img/blog/blog-1.jpg" alt="">
                                     <div class="blog_date">
                                         <h4>29</h4>
                                         <h5>October, 2017</h5>
@@ -119,7 +142,7 @@
                             <div class="blog_author">
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img class="rounded-circle" src="img/blog/blog-author.png" alt="">
+                                        <img class="rounded-circle" src="assets/img/blog/blog-author.png" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h4>Michael Smith, <span>Author</span></h4>
@@ -130,7 +153,7 @@
                             <div class="blog_comment">
                                 <h3>Comments (2)</h3>
                                 <div class="media">
-                                    <img src="img/comment/comment-1.png" alt="">
+                                    <img src="assets/img/comment/comment-1.png" alt="">
                                     <div class="d-flex">
                                         <h4>Sophia Willams</h4>
                                         <h5>Oct 29, 2017</h5>
@@ -141,7 +164,7 @@
                                     </div>
                                 </div>
                                 <div class="media">
-                                    <img src="img/comment/comment-2.png" alt="">
+                                    <img src="assets/img/comment/comment-2.png" alt="">
                                     <div class="d-flex">
                                         <h4>Gabriel Smith</h4>
                                         <h5>Oct 29, 2017</h5>
@@ -203,22 +226,22 @@
                                 </div>
                                 <ul>
                                     <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-1.jpg" alt="">
+                                        <img class="img-fluid" src="assets/img/instagram/right-instagram/r-in-1.jpg" alt="">
                                     </a></li>
                                     <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-2.jpg" alt="">
+                                        <img class="img-fluid" src="assets/img/instagram/right-instagram/r-in-2.jpg" alt="">
                                     </a></li>
                                     <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-3.jpg" alt="">
+                                        <img class="img-fluid" src="assets/img/instagram/right-instagram/r-in-3.jpg" alt="">
                                     </a></li>
                                     <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-4.jpg" alt="">
+                                        <img class="img-fluid" src="assets/img/instagram/right-instagram/r-in-4.jpg" alt="">
                                     </a></li>
                                     <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-5.jpg" alt="">
+                                        <img class="img-fluid" src="assets/img/instagram/right-instagram/r-in-5.jpg" alt="">
                                     </a></li>
                                     <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-6.jpg" alt="">
+                                        <img class="img-fluid" src="assets/img/instagram/right-instagram/r-in-6.jpg" alt="">
                                     </a></li>
                                 </ul>
                             </aside>
@@ -240,14 +263,14 @@
                                 <div class="r_w_title">
                                     <h3>Quote</h3>
                                 </div>
-                                <img src="img/icon/quote-icon.png" alt="">
+                                <img src="assets/img/icon/quote-icon.png" alt="">
                                 <p>Vivamus in urna eu enim porttitor consequat. Proin vitae pulvinar libero. Proin ut hendrerit metus. Aliquam erat volut pat. Donec fermen tum convallis.</p>
                             </aside>
                             <aside class="r_widget add_widget">
                                 <div class="r_w_title">
                                     <h3>Add</h3>
                                 </div>
-                                <img class="img-fluid" src="img/add.jpg" alt="">
+                                <img class="img-fluid" src="assets/img/add.jpg" alt="">
                             </aside>
                         </div>
                     </div>
@@ -263,7 +286,7 @@
                     <div class="row footer_widget_inner">
                         <div class="col-lg-4 col-sm-6">
                             <aside class="f_widget f_about_widget">
-                                <img src="img/footer-logo.png" alt="">
+                                <img src="assets/img/footer-logo.png" alt="">
                                 <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.</p>
                             </aside>
                         </div>
@@ -273,14 +296,14 @@
                                     <h3>Instagram</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="#"><img src="img/instagram/ins-1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-2.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-3.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-4.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-5.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-6.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-7.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-8.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/instagram/ins-1.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/instagram/ins-2.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/instagram/ins-3.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/instagram/ins-4.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/instagram/ins-5.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/instagram/ins-6.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/instagram/ins-7.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/instagram/ins-8.jpg" alt=""></a></li>
                                 </ul>
                             </aside>
                         </div>
@@ -324,33 +347,33 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <!-- Rev slider js -->
-        <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script src="assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
         <!-- Extra plugin css -->
-        <script src="vendors/counterup/jquery.waypoints.min.js"></script>
-        <script src="vendors/counterup/jquery.counterup.min.js"></script> 
-        <script src="vendors/counterup/apear.js"></script>
-        <script src="vendors/counterup/countto.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/smoothscroll.js"></script>
-        <script src="vendors/circle-bar/circle-progress.min.js"></script>
-        <script src="vendors/circle-bar/plugins.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="assets/vendors/counterup/jquery.waypoints.min.js"></script>
+        <script src="assets/vendors/counterup/jquery.counterup.min.js"></script> 
+        <script src="assets/vendors/counterup/apear.js"></script>
+        <script src="assets/vendors/counterup/countto.js"></script>
+        <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="assets/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/smoothscroll.js"></script>
+        <script src="assets/vendors/circle-bar/circle-progress.min.js"></script>
+        <script src="assets/vendors/circle-bar/plugins.js"></script>
+        <script src="assets/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
         
-        <script src="js/circle-active.js"></script>
-        <script src="js/theme.js"></script>
+        <script src="assets/js/circle-active.js"></script>
+        <script src="assets/js/theme.js"></script>
     </body>
 </html>

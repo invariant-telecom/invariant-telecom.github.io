@@ -310,8 +310,8 @@ i:before {
             transition: all 400ms linear 0s;
             font-weight: normal;
             text-shadow: none; }
-          .main_menu_area .navbar .navbar-nav li.submenu .dropdown-menu li:hover .main_menu_area .navbar .navbar-nav li.submenu .dropdown-menu li.active a {
-            color: #97ccfe; }
+          .main_menu_area .navbar .navbar-nav li.submenu .dropdown-menu li:hover a {
+            color: #F16B6D; }
         @media (min-width: 992px) {
           .main_menu_area .navbar .navbar-nav li:hover.submenu .dropdown-menu {
             -webkit-transform: scaleY(1);
@@ -351,6 +351,8 @@ i:before {
         .main_menu_area.navbar_fixed .navbar .navbar-nav li a {
           line-height: 70px; } }
     .main_menu_area.navbar_fixed .navbar .navbar-nav li:hover a, .main_menu_area.navbar_fixed .navbar .navbar-nav li.active a {
+      color: #149FC5; }
+    .main_menu_area.navbar_fixed .navbar .navbar-nav li.submenu .dropdown-menu li:hover a {
       color: #149FC5; }
 
 /* End Main Menu Area css
@@ -416,16 +418,14 @@ i:before {
     -o-transition: all 400ms linear !important;
     transition: all 400ms linear !important;
     padding: 0px 53px; }
-  .main_slider_area .rev_slider .tp-bullets {
-    margin-left: 25px; }
-    .main_slider_area .rev_slider .tp-bullets .tp-bullet {
-      height: 10px;
-      width: 10px;
-      background: #b3adff;
-      border: 5px solid #fff; }
-      .main_slider_area .rev_slider .tp-bullets .tp-bullet.selected {
-        background: #97cdfe;
-        border-color: #97cdfe; }
+  .main_slider_area .rev_slider .tp-bullets .tp-bullet {
+    height: 10px;
+    width: 10px;
+    background: #b3adff;
+    border: 5px solid #fff; }
+    .main_slider_area .rev_slider .tp-bullets .tp-bullet.selected {
+      background: #97cdfe;
+      border-color: #97cdfe; }
   .main_slider_area .rev_slider .tp-leftarrow, .main_slider_area .rev_slider .tp-rightarrow {
     height: 120px;
     background-image: -webkit-gradient(linear, left top, right top, from(#70bafe), color-stop(51%, #998dff), to(#70bafe));
