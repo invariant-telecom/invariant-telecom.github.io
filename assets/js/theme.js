@@ -22,9 +22,12 @@
     navbarFixed();
     
     $('#hamburger').click(function(){
-		$(this).toggleClass('open');
+        $(this).toggleClass('open');
+        $(this).css("pointer-events", "none");
+        setTimeout(function(){
+            $('#hamburger').css("pointer-events", "auto");
+        }, 500);
 	});
-    
     
     /*----------------------------------------------------*/
     /*  Main Slider js
