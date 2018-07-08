@@ -3,10 +3,10 @@
     
     var nav_offset_top = $('header').height(); 
     /*-------------------------------------------------------------------------------
-	  Navbar 
-	-------------------------------------------------------------------------------*/
+      Navbar 
+    -------------------------------------------------------------------------------*/
 
-	//* Navbar Fixed  
+    //* Navbar Fixed and Back-To-Top button
     function navbarFixed(){
         if ( $('.main_menu_area').length ){ 
             $(window).scroll(function() {
@@ -16,19 +16,37 @@
                 } else {
                     $(".main_menu_area").removeClass("navbar_fixed");
                 }
+
+                if (scroll <= 300) {
+                    $('.back-to-top').addClass('hide');
+                } else {
+                    $('.back-to-top').removeClass('hide');
+                }
             });
         };
     };
     navbarFixed();
+
+    /*-------------------------------------------------------------------------------
+      Back To Top click 
+    -------------------------------------------------------------------------------*/
+    $('body').on('click', '.back-to-top', function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 'slow');
+    })
     
+    /*-------------------------------------------------------------------------------
+      Hamburger 
+    -------------------------------------------------------------------------------*/
     $('#hamburger').click(function(){
         $(this).toggleClass('open');
         $(this).css("pointer-events", "none");
         setTimeout(function(){
             $('#hamburger').css("pointer-events", "auto");
         }, 500);
-	});
-    
+    });
+
     /*----------------------------------------------------*/
     /*  Main Slider js
     /*----------------------------------------------------*/
