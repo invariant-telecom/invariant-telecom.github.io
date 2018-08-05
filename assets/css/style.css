@@ -1155,11 +1155,11 @@ i:before {
   font-size: 15px;
   font-family: "Lato", sans-serif;
   line-height: 45px;
-  border: 3px solid rgba(204, 241, 255, 0.5);
+  border: 2px solid rgba(204, 241, 255, 0.5);
   border-radius: 33px; }
   .submit_btn_side:hover {
     background-position: right center;
-    border: 3px solid rgba(204, 241, 255, 0.5); }
+    border: 2px solid rgba(204, 241, 255, 0.5); }
 
 .solid_btn {
   padding: 0px 53px;
@@ -1950,13 +1950,18 @@ i:before {
 /*----------------------------------------------------*/
 /* Footer Area css
 ============================================================================================ */
-.footr_area {
+.footer_area {
   color: #ffffff; }
 
 .footer_widget_area {
   background: url(../img/footer-bg.jpg) no-repeat scroll center center;
   background-size: cover;
-  padding: 30px 0px; }
+  padding: 0; }
+  .footer_widget_area .container {
+    padding: 30px 0px; }
+
+.footer_blur_area {
+  background: rgba(255, 255, 255, 0.25); }
 
 .footer_widget_top {
   border-bottom: 1px solid #e2e2e2;
@@ -2036,10 +2041,10 @@ i:before {
     float: left;
     display: block;
     width: 70%;
-    border-radius: 0px;
+    border-radius: 30px;
     border: none;
     height: 45px;
-    padding: 0px 15px;
+    padding: 0px 25px;
     font-size: 14px;
     font-family: "Lato", sans-serif;
     font-style: italic;
@@ -2068,10 +2073,11 @@ i:before {
     float: left;
     max-width: 30%;
     margin-left: 0px;
-    margin-top: -3px; }
+    margin-top: -2px; }
 
 .f_subs_widget .social-media {
-  margin-top: 70px; }
+  margin-top: 70px;
+  margin-left: 3px; }
   .f_subs_widget .social-media .f_social_icon {
     margin-right: 15px;
     float: left; }

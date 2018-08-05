@@ -37,6 +37,9 @@
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Filepond stylesheet -->
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+
     <!-- Rev slider css -->
     <link href="assets/vendors/revolution/css/settings.css" rel="stylesheet">
     <link href="assets/vendors/revolution/css/layers.css" rel="stylesheet">
@@ -450,16 +453,32 @@
                 <div class="col-lg-6">
                     <form class="contact_us_form row" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                         <div class="form-group col-lg-6">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name*">
                         </div>
                         <div class="form-group col-lg-6">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email*">
                         </div>
-                        <div class="form-group col-lg-12">
+                        <div class="form-group col-lg-6">
                             <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject*">
                         </div>
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" id="subject" name="phone" placeholder="Phone*">
+                        </div>
                         <div class="form-group col-lg-12">
-                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
+                            <textarea class="form-control" name="projectbrif" id="message" rows="1" placeholder="Project Brif/Notes*"></textarea>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input class="col-sm-12" type="file" name="myfile" />
+                        </div>
+                        <div class="dropdown col-lg-6">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
                         </div>
                         <div class="form-group col-lg-12">
                             <button type="submit" value="submit" class="btn submit_btn form-control">Send</button>
@@ -508,87 +527,87 @@
     <!--================End Map Area =================-->
 
     <!--================Footer Area =================-->
-    <footer class="footr_area">
+    <footer class="footer_area">
         <div class="footer_widget_area">
-            <div class="container">
-                <div class="row footer_widget_top">
-                    <div class="col-lg-8 col-sm-6">
-                        <h2>Ready to work with us?</h2>
-                        <!-- <p>Supplementary line here that provides more detail</p> -->
+            <div class="footer_blur_area">
+                <div class="container">
+                    <div class="row footer_widget_top">
+                        <div class="col-lg-8 col-sm-6">
+                            <h2>Ready to work with us?</h2>
+                            <!-- <p>Supplementary line here that provides more detail</p> -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <button class="solid_btn_thin" href="/contact/">Contact us</button>
+                            <a class="learn_more_btn" href="/solutions/">Learn More</a>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <button class="solid_btn_thin" href="/contact/">Contact us</button>
-                        <a class="learn_more_btn" href="/solutions/">Learn More</a>
-                    </div>
-                </div>
-                <div class="row footer_widget_middle">
-                    <div class="col-md-4 col-sm-6">
-                        <ul>
-                            <li class="f_middle_ul_title">Offering</li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Why Invariant</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Products</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <ul>
-                            <li class="f_middle_ul_title">Company</li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact →</a></li>
-                            <li><a href="#">Job Offering  <span>We're hiring!</span></a></li>
-                            <li><a href="#">Internship</a></li>
-                            <li><a href="#">Media</a></li>
-                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfJGmG5qPZewqq9upg-XEeZOdSwsy7QPULlEV1RyyVLqZpgIA/viewform" target="_blank">Content studio application →</a></li>
-                            <li><a href="https://info.newscred.com/marketplace.html" target="_blank">Content marketplace application →</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <aside class="f_widget f_subs_widget">
-                            <div class="f_title">
-                                <h3>Subscribe to our Newsletter</h3>
-                            </div>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Your e-mail address here" aria-label="Your e-mail address here">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-secondary submit_btn_side" type="button">GO!</button>
-                                </span>
-                            </div>
-                            <div class="social-media">
-                                <ul>
-                                    <li class="f_social_icon">
-                                        <a href="#">
-                                            <i class="fa fa-pinterest "></i>
-                                        </a>
-                                    </li>
-                                    <li class="f_social_icon">
-                                        <a href="#">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="f_social_icon">
-                                        <a href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="f_social_icon">
-                                        <a href="#">
-                                            <i class="fa fa-dribbble"></i>
-                                        </a>
-                                    </li>
-                                    <li class="f_social_icon">
-                                        <a href="#">
-                                            <i class="fa fa-behance"></i>
-                                        </a>
-                                    </li>
-                                    <li class="f_social_icon">
-                                        <a href="#">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </aside>
+                    <div class="row footer_widget_middle">
+                        <div class="col-md-4 col-sm-6">
+                            <ul>
+                                <li class="f_middle_ul_title">Offering</li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Why Invariant</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Products</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <ul>
+                                <li class="f_middle_ul_title">Company</li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact →</a></li>
+                                <li><a href="#">Job Offering  <span>We're hiring!</span></a></li>
+                                <li><a href="#">Internship</a></li>
+                                <li><a href="#">Media</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <aside class="f_widget f_subs_widget">
+                                <div class="f_title">
+                                    <h3>Subscribe to our Newsletter</h3>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Your e-mail address here" aria-label="Your e-mail address here">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-secondary submit_btn_side" type="button">GO!</button>
+                                    </span>
+                                </div>
+                                <div class="social-media">
+                                    <ul>
+                                        <li class="f_social_icon">
+                                            <a href="#">
+                                                <i class="fa fa-pinterest "></i>
+                                            </a>
+                                        </li>
+                                        <li class="f_social_icon">
+                                            <a href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="f_social_icon">
+                                            <a href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="f_social_icon">
+                                            <a href="#">
+                                                <i class="fa fa-dribbble"></i>
+                                            </a>
+                                        </li>
+                                        <li class="f_social_icon">
+                                            <a href="#">
+                                                <i class="fa fa-behance"></i>
+                                            </a>
+                                        </li>
+                                        <li class="f_social_icon">
+                                            <a href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -637,6 +656,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Load FilePond library -->
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    <!-- Turn all file input elements into ponds -->
+    <script>
+        FilePond.parse(document.body);
+    </script>
+
     <!-- Rev slider js -->
     <script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
     <script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>

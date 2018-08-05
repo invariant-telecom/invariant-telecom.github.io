@@ -1,12 +1,18 @@
 /* Footer Area css
 ============================================================================================ */
-.footr_area{
-    color: $white
+.footer_area{
+    color: $white;
 }
 .footer_widget_area{
     background: url(../img/footer-bg.jpg) no-repeat scroll center center;
     background-size: cover;
-    padding: 30px 0px;
+    padding: 0;
+    .container{
+        padding: 30px 0px;
+    }
+}
+.footer_blur_area{
+    background: rgba(255, 255, 255, 0.25);
 }
 .footer_widget_top{
     border-bottom: 1px solid #e2e2e2;
@@ -27,7 +33,7 @@
     }
 }
 .footer_widget_inner{
-    
+
 }
 .footer_widget_middle{
     padding: 60px 0;
@@ -109,10 +115,10 @@
             float: left;
             display: block;
             width: 70%;
-            border-radius: 0px;
+            border-radius: 30px;
             border: none;
             height: 45px;
-            padding: 0px 15px;
+            padding: 0px 25px;
             font-size: 14px;
             font-family: $rob;
             font-style: italic;
@@ -128,11 +134,12 @@
             float: left;
             max-width: 30%;
             margin-left: 0px;
-            margin-top: -3px;
+            margin-top: -2px;
         }
     }
     .social-media{
         margin-top: 70px;
+        margin-left: 3px;
         .f_social_icon{
             margin-right: 15px;
             float: left;
