@@ -1,12 +1,19 @@
 /* Footer Area css
 ============================================================================================ */
 .footr_area{
-    
+    color: $white
 }
 .footer_widget_area{
     background: url(../img/footer-bg.jpg) no-repeat scroll center center;
     background-size: cover;
-    padding: 130px 0px 115px 0px;
+    padding: 80px 0px 80px 0px;
+}
+.footer_widget_top{
+    h2{
+        float: left;
+        font-size: 25px;
+        font-weight: 700;
+    }
 }
 .footer_widget_inner{
     
@@ -17,7 +24,7 @@
 .f_title{
     padding-bottom: 45px;
     h3{
-        font-size: 16px;
+        font-size: 18px;
         color: #fff;
         font-family: $rob;
         font-weight: 500;
@@ -25,10 +32,19 @@
 }
 .f_about_widget{
     padding-right: 35px;
-    img{
-        padding-bottom: 55px;
+    padding-bottom: 45px;
+    a{
+        font-size: 25px;
+        text-decoration: none;
+        color: $white;
+        img{
+            max-height: 25px;
+            margin-right: 10px;
+            margin-top: -5px;
+        }
     }
     p{
+        margin-top: 25px;
         font-size: 15px;
         line-height: 28px;
         color: #fff;

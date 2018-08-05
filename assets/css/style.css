@@ -1078,6 +1078,30 @@ i:before {
     background-position: right center;
     color: #fff; }
 
+.more_btn_thin {
+  padding: 0px 25px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#6fbcfe), color-stop(51%, #998dff), to(#6fbcfe));
+  background-image: -webkit-linear-gradient(left, #6fbcfe 0%, #998dff 51%, #6fbcfe 100%);
+  background-image: -o-linear-gradient(left, #6fbcfe 0%, #998dff 51%, #6fbcfe 100%);
+  background-image: linear-gradient(to right, #6fbcfe 0%, #998dff 51%, #6fbcfe 100%);
+  background-size: 200% auto;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  line-height: 35px;
+  border: 3px solid rgba(204, 241, 255, 0.5);
+  border-radius: 33px; }
+  .more_btn_thin:hover {
+    background-position: right center;
+    color: #fff; }
+
 .submit_btn {
   background-image: -webkit-gradient(linear, left top, right top, from(#70bafe), color-stop(51%, #998dff), to(#70bafe));
   background-image: -webkit-linear-gradient(left, #70bafe 0%, #998dff 51%, #70bafe 100%);
@@ -1126,6 +1150,25 @@ i:before {
   border: 6px solid rgba(204, 241, 255, 0.5);
   border-radius: 33px; }
   .solid_btn:hover {
+    background-position: right center;
+    color: #fff; }
+
+.solid_btn_thin {
+  padding: 0px 20px;
+  background: #6fbcfe;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  line-height: 35px;
+  border: 3px solid rgba(204, 241, 255, 0.5);
+  border-radius: 33px; }
+  .solid_btn_thin:hover {
     background-position: right center;
     color: #fff; }
 
@@ -1880,24 +1923,40 @@ i:before {
 /*----------------------------------------------------*/
 /* Footer Area css
 ============================================================================================ */
+.footr_area {
+  color: #ffffff; }
+
 .footer_widget_area {
   background: url(../img/footer-bg.jpg) no-repeat scroll center center;
   background-size: cover;
-  padding: 130px 0px 115px 0px; }
+  padding: 80px 0px 80px 0px; }
+
+.footer_widget_top h2 {
+  float: left;
+  font-size: 25px;
+  font-weight: 700; }
 
 .f_title {
   padding-bottom: 45px; }
   .f_title h3 {
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     font-family: "Lato", sans-serif;
     font-weight: 500; }
 
 .f_about_widget {
-  padding-right: 35px; }
-  .f_about_widget img {
-    padding-bottom: 55px; }
+  padding-right: 35px;
+  padding-bottom: 45px; }
+  .f_about_widget a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff; }
+    .f_about_widget a img {
+      max-height: 25px;
+      margin-right: 10px;
+      margin-top: -5px; }
   .f_about_widget p {
+    margin-top: 25px;
     font-size: 15px;
     line-height: 28px;
     color: #fff;
