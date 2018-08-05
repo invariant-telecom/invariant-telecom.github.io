@@ -6,17 +6,45 @@
 .footer_widget_area{
     background: url(../img/footer-bg.jpg) no-repeat scroll center center;
     background-size: cover;
-    padding: 80px 0px 80px 0px;
+    padding: 30px 0px;
 }
 .footer_widget_top{
+    border-bottom: 1px solid #e2e2e2;
+    padding: 60px 0;
     h2{
         float: left;
         font-size: 25px;
         font-weight: 700;
     }
+    .learn_more_btn{
+        text-decoration: none;
+        color: $accentBlue;
+        padding: 0 20px;
+        @include transition;
+        &:hover{
+            color: $accentRed;
+        }  
+    }
 }
 .footer_widget_inner{
     
+}
+.footer_widget_middle{
+    padding: 60px 0;
+    .f_middle_ul_title{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    a{
+        color: $white;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    span{
+        color: $accentRed;
+    }
 }
 .f_widget{
     
@@ -70,36 +98,50 @@
     }
 }
 .f_subs_widget{
+    .f_title{
+        h3{
+            font-size: 25px;
+        }
+    }
     .input-group{
         display: block;
         input{
+            float: left;
             display: block;
-            width: 100%;
+            width: 70%;
             border-radius: 0px;
             border: none;
-            height: 52px;
-            padding: 0px 30px;
-            font-size: 12px;
+            height: 45px;
+            padding: 0px 15px;
+            font-size: 14px;
             font-family: $rob;
             font-style: italic;
             color: #9b9b9b;
             @include placeholder{
-                font-size: 12px;
+                font-size: 14px;
                 font-family: $rob;
                 font-style: italic;
                 color: #9b9b9b;
             }
         }
         .input-group-btn{
+            float: left;
+            max-width: 30%;
             margin-left: 0px;
-            display: block;
-            margin-top: 25px;
-            .submit_btn{
-                margin-left: 0px;
-                border-radius: 35px !important;
+            margin-top: -3px;
+        }
+    }
+    .social-media{
+        margin-top: 70px;
+        .f_social_icon{
+            margin-right: 15px;
+            float: left;
+            a{
+                font-size: 30px;
+                @include transition;
                 &:hover{
-                    border-color: #8cc4fb;
-                }
+                    color: $accentBlue;
+                } 
             }
         }
     }
@@ -107,38 +149,37 @@
 .footer_copyright{
     overflow: hidden;
     background: #11173b;
-    padding: 35px 0px;
-    .float-sm-left{
+    padding: 30px 0px;
+    ul{
+        li{
+            float: left;
+            margin-right: 32px;
+            a{
+                font-size: 14px;
+                color: #363a5c;
+                @include transition;
+                
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+            &:hover{
+                a{
+                    color: #fff;
+                }
+            }    
+        }
+    }
+    .fc_create{
         h5{
-            font-size: 14px;
+            font-size: 12px;
             color: #2a2f56;
             font-family: $rob;
             text-transform: uppercase;
             font-weight: 500;
             line-height: 29px;
         }
-    }    
-    .float-sm-right{
-        ul{
-            li{
-                display: inline-block;
-                margin-right: 32px;
-                a{
-                    font-size: 14px;
-                    color: #2a2f56;
-                    @include transition;
-                }
-                &:last-child{
-                    margin-right: 0px;
-                }
-                &:hover{
-                    a{
-                        color: #fff;
-                    }
-                }    
-            }
-        }
-    }    
+    }
 }
 /* End Footer Area css
 ============================================================================================ */
