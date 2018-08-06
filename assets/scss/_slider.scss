@@ -67,7 +67,7 @@
 /* Testimonials Slider css
 ============================================================================================ */
 .testimonials_area{
-    padding-top: 190px;
+    padding-top: 200px;
     padding-bottom: 130px;
     border-bottom: 1px solid #bbbec1;
 }
@@ -81,7 +81,7 @@
         width: 100%;
         position: absolute;
         left: 50%;
-        top: -210px;
+        top: -165px;
         transform: translateX(-50%);
         z-index: -1;
     }
@@ -113,7 +113,7 @@
             color: $pfont;
             line-height: 28px;
             font-weight: normal;
-            padding: 20px 0px 55px 0px;
+            padding: 20px 0px 20px 0px;
         }
         .media{
             .d-flex{
@@ -139,7 +139,7 @@
     .owl-dots{
         text-align: center;
         z-index: 4;
-        margin-top: 50px;
+        margin-top: 25px;
         .owl-dot{
             height: 6px;
             width: 6px;

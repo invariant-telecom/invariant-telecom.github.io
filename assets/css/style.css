@@ -457,7 +457,7 @@ i:before {
 /* Testimonials Slider css
 ============================================================================================ */
 .testimonials_area {
-  padding-top: 190px;
+  padding-top: 200px;
   padding-bottom: 130px;
   border-bottom: 1px solid #bbbec1; }
 
@@ -471,7 +471,7 @@ i:before {
     width: 100%;
     position: absolute;
     left: 50%;
-    top: -210px;
+    top: -165px;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -494,7 +494,7 @@ i:before {
     color: #7c8d93;
     line-height: 28px;
     font-weight: normal;
-    padding: 20px 0px 55px 0px; }
+    padding: 20px 0px 20px 0px; }
   .testimonials_slider .testi_item .media .d-flex {
     padding-right: 20px; }
   .testimonials_slider .testi_item .media .media-body h4 {
@@ -511,7 +511,7 @@ i:before {
   .testimonials_slider .owl-dots {
     text-align: center;
     z-index: 4;
-    margin-top: 50px; }
+    margin-top: 25px; }
     .testimonials_slider .owl-dots .owl-dot {
       height: 6px;
       width: 6px;
@@ -568,6 +568,45 @@ i:before {
     -webkit-box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
     box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11); }
     .feature_item:hover .more_btn {
+      opacity: 1; }
+
+.feature_item_wi {
+  text-align: center;
+  padding-top: 30px;
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s; }
+  .feature_item_wi .f_icon {
+    min-height: 91px;
+    position: relative; }
+    .feature_item_wi .f_icon img {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+  .feature_item_wi h4 {
+    color: #0b1033;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 45px 0px 20px 0px; }
+  .feature_item_wi p {
+    font-size: 15px;
+    line-height: 28px;
+    font-family: "Lato", sans-serif;
+    color: #7c8d93;
+    font-weight: 500;
+    max-width: 290px;
+    margin: auto;
+    padding-bottom: 60px; }
+  .feature_item_wi .more_btn {
+    opacity: 0; }
+  .feature_item_wi:hover {
+    -webkit-box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11); }
+    .feature_item_wi:hover .more_btn {
       opacity: 1; }
 
 .service_feature {
@@ -711,6 +750,38 @@ i:before {
     align-self: center;
     -webkit-box-shadow: 0px 27px 68px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 27px 68px 0px rgba(0, 0, 0, 0.4); }
+
+/* End Challange Area css
+============================================================================================ */
+/* Method Area css
+============================================================================================ */
+.method_area {
+  overflow: hidden;
+  padding: 50px 0px; }
+  .method_area .row {
+    padding: 50px 0px; }
+
+.method_text_inner {
+  max-width: 545px;
+  float: right;
+  padding: 0px 40px; }
+  .method_text_inner p {
+    font-size: 15px;
+    line-height: 28px;
+    color: #7c8d93;
+    font-family: "Lato", sans-serif;
+    font-weight: 500; }
+
+.method_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 40px 0px 40px; }
+  .method_img .method_img_inner {
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3); }
 
 /* End Challange Area css
 ============================================================================================ */

@@ -45,6 +45,48 @@
     }
 }
 
+.feature_item_wi{
+    text-align: center;
+    padding-top: 30px;
+    @include transition;
+    .f_icon{
+        min-height: 91px;
+        position: relative;
+        img{
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    h4{
+        color: $dip;
+        font-family: $rob;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 45px 0px 20px 0px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 28px;
+        font-family: $rob;
+        color: $pfont;
+        font-weight: 500;
+        max-width: 290px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    .more_btn{
+        opacity: 0;
+    }
+    &:hover{
+        box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
+        .more_btn{
+            opacity: 1;
+        }
+    }
+}
+
 .service_feature{
     border-bottom: 1px solid #bbbec1;
     padding-top: 100px;
@@ -196,6 +238,38 @@
     .challange_img_inner{
         align-self: center;
         box-shadow: 0px 27px 68px 0px rgba(0, 0, 0, 0.4);
+    }
+}
+/* End Challange Area css
+============================================================================================ */
+
+/* Method Area css
+============================================================================================ */
+.method_area{
+    overflow: hidden;
+    padding: 50px 0px;
+    .row{
+        padding: 50px 0px;
+    }
+}
+.method_text_inner{
+    max-width: 545px;
+    float: right;
+    padding: 0px 40px;
+    p{
+        font-size: 15px;
+        line-height: 28px;
+        color: #7c8d93;
+        font-family: $rob;
+        font-weight: 500;
+    }
+}
+.method_img{
+    display: flex;
+    padding: 20px 40px 0px 40px;
+    .method_img_inner{
+        align-self: center;
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
     }
 }
 /* End Challange Area css
