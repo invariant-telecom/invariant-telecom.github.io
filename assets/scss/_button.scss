@@ -83,12 +83,14 @@
     color: #fff;
     font-size: 15px;
     font-family: $rob;
-    line-height: 45px;
-    border: 1px solid rgba(204, 241, 255, .5);
+    line-height: 39px;
+    border: 1px solid #3e42688e;
+    border-left: 0;
     border-radius: 33px;
     &:hover{
         background-position: right center;
-        border: 1px solid rgba(204, 241, 255, .5);
+        border: 1px solid #3e42688e;
+        border-left: 0;
     }
 }
 

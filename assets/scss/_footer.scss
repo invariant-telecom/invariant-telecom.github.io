@@ -116,12 +116,14 @@
             width: 70%;
             border-radius: 30px;
             border: none;
-            height: 45px;
+            height: 41px;
             padding: 0px 25px;
             font-size: 14px;
             font-family: $rob;
             font-style: italic;
             color: #9b9b9b;
+            border: 1px solid #3e42688e;
+            border-right: 0;
             @include placeholder{
                 font-size: 14px;
                 font-family: $rob;
@@ -133,7 +135,6 @@
             float: left;
             max-width: 30%;
             margin-left: 0px;
-            margin-top: -1px;
         }
     }
     .social-media{
@@ -144,6 +145,7 @@
             float: left;
             a{
                 font-size: 30px;
+                color: #3e4268cb;
                 @include transition;
                 &:hover{
                     color: $accentBlue;

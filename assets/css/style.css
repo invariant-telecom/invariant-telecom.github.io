@@ -1225,12 +1225,14 @@ i:before {
   color: #fff;
   font-size: 15px;
   font-family: "Lato", sans-serif;
-  line-height: 45px;
-  border: 1px solid rgba(204, 241, 255, 0.5);
+  line-height: 39px;
+  border: 1px solid #3e42688e;
+  border-left: 0;
   border-radius: 33px; }
   .submit_btn_side:hover {
     background-position: right center;
-    border: 1px solid rgba(204, 241, 255, 0.5); }
+    border: 1px solid #3e42688e;
+    border-left: 0; }
 
 .solid_btn {
   padding: 0px 53px;
@@ -2129,12 +2131,14 @@ i:before {
     width: 70%;
     border-radius: 30px;
     border: none;
-    height: 45px;
+    height: 41px;
     padding: 0px 25px;
     font-size: 14px;
     font-family: "Lato", sans-serif;
     font-style: italic;
-    color: #9b9b9b; }
+    color: #9b9b9b;
+    border: 1px solid #3e42688e;
+    border-right: 0; }
     .f_subs_widget .input-group input.placeholder {
       font-size: 14px;
       font-family: "Lato", sans-serif;
@@ -2158,8 +2162,7 @@ i:before {
   .f_subs_widget .input-group .input-group-btn {
     float: left;
     max-width: 30%;
-    margin-left: 0px;
-    margin-top: -1px; }
+    margin-left: 0px; }
 
 .f_subs_widget .social-media {
   margin-top: 70px;
@@ -2169,6 +2172,7 @@ i:before {
     float: left; }
     .f_subs_widget .social-media .f_social_icon a {
       font-size: 30px;
+      color: #3e4268cb;
       -webkit-transition: all 400ms linear 0s;
       -o-transition: all 400ms linear 0s;
       transition: all 400ms linear 0s; }
