@@ -88,11 +88,9 @@
 }
 
 .service_feature{
-    border-bottom: 1px solid #bbbec1;
     padding-top: 100px;
     overflow: hidden;
     .feature_inner{
-        margin-bottom: -50px;
         .feature_item{
             margin-bottom: 50px;
             .more_btn{
@@ -529,8 +527,10 @@
 }
 
 .mileston_area{
-    padding-bottom: 100px;
+    padding: 50px 0px 100px 0px;
     .elements_title{
+        font-size: 40px;
+        text-align: center;
         padding-bottom: 65px;
     }
     .col-lg-3{
@@ -609,7 +609,7 @@
             font-family: $rob;
             font-weight: 500;
             line-height: 28px;
-            padding: 25px 0px 55px 0px;
+            padding: 25px 0px 35px 0px;
         }
         .media{
             vertical-align: middle;
@@ -629,6 +629,7 @@
                 h6{
                     font-size: 12px;
                     font-family: $rob;
+                    color: $pfont_2;
                     font-weight: 500;
                 }
             }
@@ -641,14 +642,14 @@
             height: 6px;
             width: 6px;
             border-radius: 50%;
-            background: #fff;
+            background: $pfont_2;
             display: inline-block;
             margin-right: 10px;
             &:last-child{
                 margin-right: 0px;
             }
             &.active{
-                background: #97ccfe;
+                background: $accentRed;
             }
         }    
     }
