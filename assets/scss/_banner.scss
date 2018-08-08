@@ -16,7 +16,7 @@
     }
 }
 .banner_inner_text{
-    padding-top: 200px;
+    padding-top: 150px;
     position: relative;
     padding-bottom: 95px;
     &:before{
@@ -26,7 +26,7 @@
         position: absolute;
         background: #ced0e0;
         left: 0px;
-        bottom: 0px;
+        bottom: 155px;
     }
     h2{
         font-size: 72px;
@@ -38,8 +38,10 @@
         font-size: 24px;
         color: #6b7d8e;
         font-family: $rob;
-        font-weight: normal;
-        padding-top: 15px;
+        font-weight: 300;
+        padding-top: 65px;
+        font-style: italic;
+
     }
 }
 /* End Banner Area css
