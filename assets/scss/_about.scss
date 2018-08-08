@@ -44,20 +44,22 @@
         }
       }
       .team_name{
-        padding: 15px 0px;
+        padding: 15px 10px;
         h4{
           color: $dip_1;
           margin: 0;
-          text-align: inherit;
+          text-align: left;
+          font-size: 20px;
           font-weight: 600;
           text-transform: none;
           font-style: normal;
           line-height: 1.2em;
         }
         p{
+          text-align: left;
           color: $gray;
           font-weight: 300;
-          font-size: 18px;
+          font-size: 16px;
         }
       }
       &:hover{
