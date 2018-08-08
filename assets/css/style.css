@@ -419,6 +419,7 @@ i:before {
     font-weight: normal !important;
     color: #0b1033; }
   .main_slider_area .rev_slider .tp-revslider-mainul li .slider_text_box .secand_text {
+    font-weight: 300;
     color: #6b7d8e; }
   .main_slider_area .rev_slider .tp-revslider-mainul li .slider_text_box .more_btn {
     -webkit-transition: all 400ms linear !important;
