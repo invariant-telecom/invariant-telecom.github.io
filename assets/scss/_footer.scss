@@ -121,7 +121,7 @@
             font-family: $rob;
             font-style: italic;
             color: #9b9b9b;
-            border: 1px solid #3e42688e;
+            border: 1px solid rgba(62, 66, 104, 0.3);
             border-right: 0;
             @include placeholder{
                 font-size: 14px;
@@ -144,7 +144,7 @@
             float: left;
             a{
                 font-size: 30px;
-                color: #3e4268cb;
+                color: rgba(62, 66, 104, 0.4);
                 @include transition;
                 &:hover{
                     color: $accentBlue;
