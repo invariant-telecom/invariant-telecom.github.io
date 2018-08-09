@@ -156,14 +156,6 @@
     .contact_us_form {
         margin-top: 0px;
     }
-    .footer_widget_inner .col-sm-6{
-        margin-bottom: 30px;
-    }
-    .footer_widget_inner .col-sm-6:last-child{
-        margin-bottom: 0px;
-    }
-    .footer_widget_area {
-    }
     .challange_text_inner {
         max-width: 545px;
         float: none;
@@ -250,6 +242,32 @@
     .buttons_area .more_btn{
         margin-bottom: 20px;
     }
+    .footer_widget_top{
+        padding: 30px 0;
+        text-align: center;
+    }
+    .footer_widget_top div{
+        margin: 10px 0px;
+    }
+    .footer_widget_middle{
+        padding: 30px 0;
+    }
+    .footer_widget_middle div{
+        margin: 10px 0px;
+    }
+    .f_subs_widget{
+        border-top: 1px solid #74799c;
+        text-align: center;
+    }
+    .f_subs_widget .f_title{
+        padding: 20px 0px;
+    }
+    .f_subs_widget .social-media ul{
+        margin: 0 auto;
+    }
+    .f_subs_widget .input-group{
+        padding: 0px 30px;
+    }
 }
 @media (max-width: 575px){
     .team_img_inner .team_img_item img {
@@ -259,13 +277,6 @@
         position: relative;
         transform: translateY(0%);
         margin: auto;
-    }
-    .footer_widget_inner{
-        max-width: 320px;
-        margin: auto;
-    }
-    .footer_copyright{
-        text-align: center;
     }
     .banner_area::before {
         max-width: 100%;
@@ -307,6 +318,22 @@
     }
     .elements_title {
         text-align: center;
+    }
+    .footer_widget_middle{
+        display: block;
+    }
+    .footer_widget_middle .offering{
+        display: inline-block;
+        padding-left: 40px;
+        width: 49%;
+    }
+    .footer_widget_middle .company{
+        display: inline-block;
+        padding-right: 40px;
+        width: 50%;
+    }
+    .footer_widget_middle span{
+        display: none
     }
 }
 @media (max-width: 480px){

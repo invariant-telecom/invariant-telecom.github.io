@@ -16,7 +16,7 @@
         position: relative;
         text-align: center;
         img{
-          border-radius: 3px;
+          border-radius: 5px;
           height: 100%;
           width: 100%;
         }
@@ -26,9 +26,9 @@
           opacity: 0;
           transition: visibility 0s, opacity 0.5s linear;
           box-shadow: 0px -1px 3px rgba(0, 0, 0, .2);
-          background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 1));
+          background: linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, 1));
           width: 100%;
-          bottom: -15px;
+          bottom: -5px;
           .media_icons{
             text-align: center;
             .f_social_icon{
@@ -36,6 +36,7 @@
               margin: 5px;
               display: inline-block;
               a{
+                padding: 5px;
                 cursor: alias;
                 color: rgba(39, 43, 85, 0.8);
               }
@@ -63,14 +64,14 @@
         }
       }
       &:hover{
-          box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.1);
           .more_btn{
               opacity: 1;
           }
           .team_links{
             visibility: visible;
             opacity: 1;
-            transform: translateY(-15px);
+            transform: translateY(-5px);
             transition: transform 500ms ease, background 500ms ease;
             -webkit-transition: transform 500ms ease, background 500ms ease;
             z-index: 999999;
