@@ -735,6 +735,10 @@ i:before {
   .nothiring_area .centered {
     float: none;
     margin: 0 auto; }
+  .nothiring_area button {
+    float: left; }
+  .nothiring_area .support_label {
+    float: left; }
 
 /* End Hiring Area css
 ============================================================================================ */
