@@ -2293,6 +2293,7 @@ i:before {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .about_team {
+  margin-top: 50px;
   text-align: center;
   overflow: hidden; }
   .about_team .team_title {
@@ -2336,8 +2337,12 @@ i:before {
             display: inline-block; }
             .about_team .team_inner .team_item .team_img .team_links .media_icons .f_social_icon a {
               padding: 5px;
-              cursor: alias;
-              color: rgba(39, 43, 85, 0.8); }
+              color: rgba(39, 43, 85, 0.8);
+              -webkit-transition: all 400ms linear 0s;
+              -o-transition: all 400ms linear 0s;
+              transition: all 400ms linear 0s; }
+              .about_team .team_inner .team_item .team_img .team_links .media_icons .f_social_icon a:hover {
+                color: #F16B6D; }
     .about_team .team_inner .team_item .team_name {
       padding: 15px 10px; }
       .about_team .team_inner .team_item .team_name h4 {
