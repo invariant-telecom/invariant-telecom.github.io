@@ -13,7 +13,7 @@
         input{
             height: 50px;
             border: none;
-            border-bottom: 2px solid #e1e1e1;
+            border-bottom: 2px solid $pfont_lite;
             border-radius: 0px;
             padding: 0px;
             outline: none;
@@ -21,12 +21,12 @@
             font-size: 13px;
             font-family: $open; 
             font-style: italic;
-            color: #a5bbd0;
+            color: $pfont;
             @include placeholder{
                 font-size: 13px;
                 font-family: $open; 
                 font-style: italic;
-                color: #a5bbd0;
+                color: $pfont;
             }
             &:focus{
                 border-image: -moz-linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
@@ -39,7 +39,7 @@
             height: 50px;
             margin-top: 5px;
             border: none;
-            border-bottom: 2px solid #e1e1e1;
+            border-bottom: 2px solid $pfont_lite;
             border-radius: 0px;
             padding: 0px;
             outline: none;
@@ -47,12 +47,12 @@
             font-size: 13px;
             font-family: $open; 
             font-style: italic;
-            color: #a5bbd0;
+            color: $pfont;
             @include placeholder{
                 font-size: 13px;
                 font-family: $open; 
                 font-style: italic;
-                color: #a5bbd0;
+                color: $pfont;
             }
             &:focus{
                 border-image: -moz-linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
@@ -62,9 +62,9 @@
             }
         }
         textarea{
-            height: 200px;
+            height: 150px;
             border: none;
-            border-bottom: 2px solid #e1e1e1;
+            border-bottom: 2px solid $pfont_lite;
             border-radius: 0px;
             padding: 15px 0px;
             outline: none;
@@ -72,13 +72,13 @@
             font-size: 13px;
             font-family: $open; 
             font-style: italic;
-            color: #a5bbd0;
+            color: $pfont;
             resize: none;
             @include placeholder{
                 font-size: 13px;
                 font-family: $open; 
                 font-style: italic;
-                color: #a5bbd0;
+                color: $pfont;
             }
             &:focus{
                 border-image: -moz-linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
