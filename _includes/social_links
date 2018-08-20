@@ -1,0 +1,8 @@
+{% for node in social_links %}
+  <li class="f_social_icon">
+      <a href="{{ node.url }}">
+          <i class="fa fa-{{ node.title | downcase }}"></i>
+      </a>
+  </li>
+{% endfor %}
+{% assign social_links = nil %}

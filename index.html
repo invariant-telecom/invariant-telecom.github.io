@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 ---
 <!--================Slider Area =================-->
     <section class="main_slider_area">
@@ -352,12 +353,12 @@ layout: default
                 <img class="img-fluid" src="assets/img/world-map.png" alt="">
                 <div class="bd-callout">
                     <h3>Dhaka Office</h3>
-                    <p>43 Mohakhali C/A
-                        <br /> Aqua Tower (Level-3 & 8)
-                        <br /> Dhaka-1212, Bangladesh</p>
+                    <p>{{ site.office.address.three_line.line_1 }}
+                        <br /> {{ site.office.address.three_line.line_2 }}
+                        <br /> {{ site.office.address.three_line.line_3 }}</p>
                     <h4>
-                        <a href="tel:+88029888093">+880 2-9888093</a>
-                        <a href="mailto:info@inverianttele.com">info@inverianttele.com</a>
+                        <a href="tel: {{ site.office.phone.info | replace: " ", "" | replace: "-", "" }}">{{ site.office.phone.info }}</a>
+                        <a href="mailto:{{ site.office.email.info }}">{{ site.office.email.info }}</a>
                     </h4>
                 </div>
             </div>
