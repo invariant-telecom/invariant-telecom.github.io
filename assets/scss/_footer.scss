@@ -172,7 +172,6 @@
     padding: 30px 0px;
     ul{
         li{
-            float: left;
             margin-right: 32px;
             a{
                 font-size: 14px;
@@ -188,16 +187,20 @@
                     color: $accentBlue;
                 }
             }
-        }
-    }
-    .fc_create{
-        h5{
-            font-size: 12px;
-            color: #2a2f56;
-            font-family: $rob;
-            text-transform: uppercase;
-            font-weight: 500;
-            line-height: 29px;
+            h5{
+                font-size: 12px;
+                color: #2a2f56;
+                font-family: $rob;
+                text-transform: uppercase;
+                font-weight: 500;
+                line-height: 29px;
+                i{
+                    font-size: 15px;
+                }
+                a{
+                    color: $accentBlue;
+                }
+            }
         }
     }
 }
