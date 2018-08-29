@@ -10,7 +10,7 @@ subtitle: Get to know us
                 <div class="col-lg-6">
                     <div class="challange_text_inner">
                         <div class="l_title">
-                            <img src="assets/img/icon/title-icon.png" alt="">
+                            <img src="/assets/img/icon/title-icon.png" alt="">
                             <h6>Discover the features</h6>
                             <h2>We don’t hide, we stand tall in front of chalenge</h2>
                         </div>
@@ -19,7 +19,7 @@ subtitle: Get to know us
                 </div>
                 <div class="col-lg-6 challange_img">
                     <div class="challange_img_inner">
-                        <img class="img-fluid" src="assets/img/popup-photo.jpg" alt="">
+                        <img class="img-fluid" src="/assets/img/popup-photo.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -46,92 +46,36 @@ subtitle: Get to know us
     <!--================Leadership Area =================-->
     <section class="about_team">
         <div class="container">
-            <h3 class="team_title">The Leaders</h3>
+            <h3 class="team_title">Leaders</h3>
             <div class="row team_inner">
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team_item">
-                        <div class="team_img">
-                            <img src="assets/img/team/people/boss_1.jpg" alt="">
-                            <div class="team_links">
-                                <div class="media_icons">
-                                    <ul>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-pinterest "></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-dribbble"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-behance"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                {% for leader in site.about %}
+                    {% if leader.catagory == 'leader' %}
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team_item">
+                                <div class="team_img">
+                                    <img src="{{ leader.image }}" alt="">
+                                    <div class="team_links">
+                                        <div class="media_icons">
+                                            <ul>
+                                                {% for item in leader.links %}
+                                                    <li class="f_social_icon">
+                                                        <a href="{{ item.url }}">
+                                                            <i class="fa fa-{{ item.title | downcase }}"></i>
+                                                        </a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team_name">
+                                    <h4>{{ leader.name }}</h4>
+                                    <p>{{ leader.designation }}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="team_name">
-                            <h4>Jashimuddin Chisty</h4>
-                            <p>Managing Director</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team_item">
-                        <div class="team_img">
-                            <img src="assets/img/team/people/zahidul_quader.jpg" alt="">
-                            <div class="team_links">
-                                <div class="media_icons">
-                                    <ul>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-pinterest "></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-dribbble"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-behance"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_name">
-                            <h4>Zahidul Quader</h4>
-                            <p>Director</p>
-                        </div>
-                    </div>
-                </div>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -140,302 +84,36 @@ subtitle: Get to know us
     <!--==================Team Area ===================-->
     <section class="about_team">
         <div class="container">
-            <h3 class="team_title">The Team</h3>
+            <h3 class="team_title">Key Members</h3>
             <div class="row team_inner">
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team_item">
-                        <div class="team_img">
-                            <img src="assets/img/team/devs/saad_ahmed.jpg" alt="">
-                            <div class="team_links">
-                                <div class="media_icons">
-                                    <ul>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-pinterest "></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-dribbble"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-behance"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                {% for team in site.about %}
+                    {% if team.catagory == 'key-member' %}
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team_item">
+                                <div class="team_img">
+                                    <img src="{{ team.image }}" alt="">
+                                    <div class="team_links">
+                                        <div class="media_icons">
+                                            <ul>
+                                                {% for item in team.links %}
+                                                    <li class="f_social_icon">
+                                                        <a href="{{ item.url }}">
+                                                            <i class="fa fa-{{ item.title | downcase }}"></i>
+                                                        </a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team_name">
+                                    <h4>{{ team.name }}</h4>
+                                    <p>{{ team.designation }}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="team_name">
-                            <h4>Saad Ahmed</h4>
-                            <p>Senior Software Engineer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team_item">
-                        <div class="team_img">
-                            <img src="assets/img/team/devs/abdul_gafur.jpeg" alt="">
-                            <div class="team_links">
-                                <div class="media_icons">
-                                    <ul>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-pinterest "></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-dribbble"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-behance"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_name">
-                            <h4>Abdul Gafur</h4>
-                            <p>Senior Software Engineer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team_item">
-                        <div class="team_img">
-                            <img src="assets/img/team/devs/fazlul_haque.jpeg" alt="">
-                            <div class="team_links">
-                                <div class="media_icons">
-                                    <ul>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-pinterest "></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-dribbble"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-behance"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_name">
-                            <h4>Fazlul Haque</h4>
-                            <p>Software Engineer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team_item">
-                        <div class="team_img">
-                            <img src="assets/img/team/devs/monir_hossain.jpg" alt="">
-                            <div class="team_links">
-                                <div class="media_icons">
-                                    <ul>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-pinterest "></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-dribbble"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-behance"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_name">
-                            <h4>Monir Hossain</h4>
-                            <p>Junior Android Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team_item">
-                        <div class="team_img">
-                            <img src="assets/img/team/devs/emrul_kaesh.jpg" alt="">
-                            <div class="team_links">
-                                <div class="media_icons">
-                                    <ul>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-pinterest "></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-dribbble"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-behance"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_name">
-                            <h4>Emrul Kaesh</h4>
-                            <p>Graphic Designer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team_item">
-                        <div class="team_img">
-                            <img src="assets/img/team/devs/dinar_ahmed.jpg" alt="">
-                            <div class="team_links">
-                                <div class="media_icons">
-                                    <ul>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-pinterest "></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-dribbble"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-behance"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_name">
-                            <h4>Dinar Ahmed</h4>
-                            <p>Junior Software Engineer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team_item">
-                        <div class="team_img">
-                            <img src="assets/img/team/devs/sama_samrin.jpg" alt="">
-                            <div class="team_links">
-                                <div class="media_icons">
-                                    <ul>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-pinterest "></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-dribbble"></i>
-                                            </a>
-                                        </li>
-                                        <li class="f_social_icon">
-                                            <a href="#">
-                                                <i class="fa fa-behance"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_name">
-                            <h4>Sama Samrin</h4>
-                            <p>Creative Content Writer</p>
-                        </div>
-                    </div>
-                </div>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </section>
