@@ -1,3 +1,8 @@
+assets: /assets
+collections:
+  about:
+sass:
+  sass_dir: assets/scss/
 title: Invariant Telecom
 navigation:
   - title: Home

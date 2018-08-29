@@ -291,10 +291,12 @@
 }
 .method_img{
     display: flex;
-    padding: 20px 40px 0px 40px;
+    padding-top: 40px;
     .method_img_inner{
+        margin:0 auto;
         align-self: center;
-        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 15%;
+        box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.3);
     }
 }
 /* End Challange Area css
