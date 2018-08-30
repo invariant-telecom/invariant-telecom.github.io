@@ -1,8 +1,8 @@
 ---
-name: Ahmed Dinar
-designation: Junior Software Engineer
+name: Rasel Ahmed
+designation: Ast. System Support Engineer
 catagory: key-member
-image: /assets/img/team/devs/ahmed_dinar.jpg
+image: /assets/img/team/devs/rasel_ahmed.jpg
 links:
   - title: pinterest
     url: /
