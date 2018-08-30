@@ -319,6 +319,10 @@
     .elements_title {
         text-align: center;
     }
+    .team_item{
+        max-width: 250px;
+        margin: 0 auto;
+    }
     .footer_widget_middle{
         display: block;
     }

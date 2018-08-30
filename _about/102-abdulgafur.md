@@ -2,7 +2,7 @@
 name: Abdul Gafur
 designation: Senior Software Engineer
 catagory: key-member
-image: /assets/img/team/devs/abdul_gafur.jpeg
+image: /assets/img/team/devs/abdul_gafur.jpg
 links:
   - title: pinterest
     url: /
