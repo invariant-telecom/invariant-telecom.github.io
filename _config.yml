@@ -6,8 +6,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Bangladesh who specializes in both web and mobile applications. Our products
   are aimed at a variety of industries including banking, telecommunications
   and digital marketing.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://invarianttele.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://invarianttele.com"
 author: Sk Arif <arif@invarianttele.com>, Kausar Ahmed<kausar@invarianttele.com>
 
 assets: /assets
