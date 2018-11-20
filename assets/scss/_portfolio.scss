@@ -37,6 +37,22 @@
     overflow: hidden;
     .ms_p_item{
         float: left;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%; height: 100%;
+            background: rgba($color: $accentBlue, $alpha: 0.6);
+            top: 100%;
+            transition: .3s ease;
+        }
+        &:hover{
+            &::before{
+                top: 0;
+            }
+        }
         img{
             width: 100%;
         }
