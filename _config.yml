@@ -9,7 +9,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 url: "http://invarianttele.com"
 author: Sk Arif <arif@invarianttele.com>, Kausar Ahmed<kausar@invarianttele.com>
 
-assets: /assets
 collections:
   about:
 sass:
