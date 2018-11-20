@@ -4,16 +4,8 @@ designation: Senior Software Engineer
 catagory: key-member
 image: /assets/img/team/devs/abdul_gafur.jpg
 links:
-  - title: pinterest
-    url: /
-  - title: facebook
-    url: /
-  - title: twitter
-    url: /
-  - title: dribbble
-    url: /
-  - title: behance
-    url: /
   - title: linkedin
-    url: /
+    url: https://www.linkedin.com/in/md-abdul-gafur-577520125/
+  - title: github
+    url: https://github.com/gafurcseku
 ---

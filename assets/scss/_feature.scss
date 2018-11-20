@@ -260,10 +260,10 @@
 }
 .challange_img{
     display: flex;
-    .challange_img_inner{
-        align-self: center;
-        box-shadow: 0px 18px 40px 0px rgba(0, 0, 0, 0.4);
-    }
+    // .challange_img_inner{
+    //     align-self: center;
+    //     box-shadow: 0px 18px 40px 0px rgba(0, 0, 0, 0.4);
+    // }
 }
 /* End Challange Area css
 ============================================================================================ */
@@ -666,7 +666,7 @@
     } 
     .owl-dots{
         text-align: right;
-        margin-top: 70px;
+        margin-top: 0;
         .owl-dot{
             height: 6px;
             width: 6px;
