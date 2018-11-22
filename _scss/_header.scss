@@ -130,7 +130,7 @@
             color: $pfont_2;
         }
         .navbar-logo{
-            max-height: 50px;
+            max-height: 45px;
             margin: 0 10px;
         }
         .navbar-nav{
@@ -152,7 +152,8 @@
                 }
                 &.active{
                     a{
-                        color: $accentRed;
+                        color: white;
+                        font-weight: bold;
                     }
                 }
                 &:last-child{
@@ -212,7 +213,7 @@
                 }
                 &:hover{
                     a{
-                        color: $accentRed;
+                        color: #ffffff;
                     }
                 }
             }
@@ -235,7 +236,7 @@
                 font-size: 20px;
             }
             .navbar-logo{
-                max-height: 40px;
+                max-height: 36px;
                 margin: 0 15px 0 5px;
             }
             .navbar-nav{
