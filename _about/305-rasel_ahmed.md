@@ -1,8 +1,8 @@
 ---
 name: Rasel Ahmed
-designation: Ast. System Support Engineer
+designation: System Support Engineer
 catagory: key-member
-image: /assets/img/team/devs/rasel_ahmed_new.jpg
+image: /assets/img/team/devs/rasel_ahmed_new_new.jpg
 links:
   - title: linkedin
     url: https://www.linkedin.com/in/rasel-ahmed-284b98114/
