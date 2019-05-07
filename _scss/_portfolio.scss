@@ -33,6 +33,9 @@
 }
 .wd_50 {
   width: 50%;
+  @include tablet {
+    width: 100%;
+  }
 }
 .ms_portfolio_inner {
   overflow: hidden;
@@ -73,6 +76,7 @@
       transform: translate(-50%, -50%);
       z-index: 2;
       text-align: center;
+      width: 80%;
       h3,
       p,
       a {
@@ -89,6 +93,9 @@
         transition-delay: 0.1s;
         margin-bottom: 30px;
         font-size: 18px;
+        @include tablet {
+          font-size: 15px;
+        }
       }
       a {
         transition-delay: 0.2s;
