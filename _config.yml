@@ -1,0 +1,55 @@
+title: Invariant Telecom
+email: info@invarianttele.com
+baseurl: '/'
+url: "http://invarianttele.com"
+author: Sk Arif <arif@invarianttele.com>, Kausar Ahmed<kausar@invarianttele.com>
+
+collections:
+  about:
+sass:
+  sass_dir: _scss/
+title: Invariant Telecom
+navigation:
+  - title: Home
+    url: /
+  - title: Why Invariant
+    url: /why-invariant
+  - title: Services
+    url: /services
+  - title: Portfolio
+    url: /portfolio
+  - title: About
+    url: /about
+  - title: Blog
+    url: https://medium.com/invariant-telecom
+    tag: special
+    target: _blank
+social_links:
+  - title: pinterest
+    url: https://www.pinterest.com/invarianttelecom/
+  - title: facebook
+    url: https://www.facebook.com/invarianttelecom/
+  - title: twitter
+    url: /
+  - title: dribbble
+    url: /
+  - title: behance
+    url: /
+  - title: linkedin
+    url: https://www.linkedin.com/company/invarianttelecom/
+office:
+  address:
+    single_line: 43 Mohakhali C/A, Aqua Tower (Level-3 & 8), Dhaka-1212, Bangladesh
+    two_line:
+      line_1: 43 Mohakhali C/A, Aqua Tower (Level-3 & 8)
+      line_2: Dhaka-1212, Bangladesh
+    three_line:
+      line_1: 43 Mohakhali C/A
+      line_2: Aqua Tower (Level-3 & 8)
+      line_3: Dhaka-1212, Bangladesh
+  email:
+    info: info@invarianttele.com
+    sales: sales@invarianttele.com
+  phone:
+    info: "+88 02-9888093"
+    sales: "+88 02-9888093"

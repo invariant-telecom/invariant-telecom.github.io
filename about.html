@@ -1,0 +1,186 @@
+---
+layout: page
+title: About
+subtitle: Get to know us
+---
+<!--================Challange Area =================-->
+<section class="challange_area p_50">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="challange_text_inner">
+                    <div class="l_title">
+                        <img src="/assets/img/icon/title-icon.png" alt="">
+                        <h6>Discover the features</h6>
+                        <h2>We don’t hide, we stand tall in front of challenge</h2>
+                    </div>
+                    <p>Invariant Telecom is a major concern of the Microtrade Group who began its humble journey in 2014. We are a software development company based in Dhaka, Bangladesh who specializes in both web and mobile applications. Our products are aimed at a variety of industries including banking, telecommunications and digital marketing.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 challange_img">
+                <div class="challange_img_inner">
+                    <img class="img-fluid" src="/assets/img/about_image.png" alt="about_image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Challange Area =================-->
+
+<!--================ Pattent Area =================-->
+<section class="challange_area p_50">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="challange_text_inner">
+                    <div class="l_title">
+                        <img src="/assets/img/icon/title-icon.png" alt="">
+                        <h6>UNIQUENESS</h6>
+                        <h2>We are Patent Holder</h2>
+                    </div>
+                    <p>
+                        Invariant has got a patent for It’s calling app TELVO from USPTO. Invariant is the only company in Bangladesh who has this types of Patent. (United States Patent No.: US 9,948,787 B2 and Date of Patent: Apr. 17, 2018)
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 challange_img">
+                <div class="challange_img_inner">
+                    <img class="img-fluid" src="/assets/img/pattent.jpg" alt="pattent_image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End Pattent Area =================-->
+
+<!-- <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 job_offering">
+                <div class="col-md-8 job_text">
+                    <h3>Do our values resonate with you?</h3>
+                    <p>We're hiring!</p>
+                </div>
+                <div class="col-md-4 job_button">
+                    <button class="solid_btn_thin" href="/contact/">Contact us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!--================Management Area =================-->
+<section class="about_team">
+    <div class="container">
+        <h3 class="team_title">Management</h3>
+        <div class="row team_inner justify-content-center">
+            {% for leader in site.about %}
+                {% if leader.catagory == 'md' %}
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="team_item">
+                            <div class="team_img">
+                                <img src="{{ leader.image }}" alt="">
+                                <div class="team_links">
+                                    <div class="media_icons">
+                                        <ul>
+                                            {% for item in leader.links %}
+                                                <li class="f_social_icon">
+                                                    <a href="{{ item.url }}" target="_blank">
+                                                        <i class="fa fa-{{ item.title | downcase }}"></i>
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team_name">
+                                <h4>{{ leader.name }}</h4>
+                                <p>{{ leader.designation }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--==============End Management Area ===============-->
+
+<!--================Leadership Area =================-->
+<section class="about_team">
+    <div class="container">
+        <h3 class="team_title">Leaders</h3>
+        <div class="row team_inner justify-content-center">
+            {% for leader in site.about %}
+                {% if leader.catagory == 'leader' %}
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="team_item">
+                            <div class="team_img">
+                                <img src="{{ leader.image }}" alt="">
+                                <div class="team_links">
+                                    <div class="media_icons">
+                                        <ul>
+                                            {% for item in leader.links %}
+                                                <li class="f_social_icon">
+                                                    <a href="{{ item.url }}" target="_blank">
+                                                        <i class="fa fa-{{ item.title | downcase }}"></i>
+                                                    </a>
+                                                
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team_name">
+                                <h4>{{ leader.name }}</h4>
+                                <p>{{ leader.designation }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--==============End Leadership Area ===============-->
+
+
+<!--==================Team Area ===================-->
+<section class="about_team">
+    <div class="container">
+        <h3 class="team_title">Key Members</h3>
+        <div class="row team_inner justify-content-center">
+            {% for team in site.about %}
+                {% if team.catagory == 'key-member' %}
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="team_item">
+                            <div class="team_img">
+                                <img src="{{ team.image }}" alt="">
+                                <div class="team_links">
+                                    <div class="media_icons">
+                                        <ul>
+                                            {% for item in team.links %}
+                                                <li class="f_social_icon">
+                                                    <a href="{{ item.url }}" target="_blank">
+                                                        <i class="fa fa-{{ item.title | downcase }}"></i>
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team_name">
+                                <h4>{{ team.name }}</h4>
+                                <p>{{ team.designation }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--================End Team Area =================-->

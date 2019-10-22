@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    <!--==========================================
+                 PRELOADER
+    ===========================================-->
+    <div class="preloader d-flex">
+        <div class="wrapper">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+                <div class="rect6"></div>
+                <div class="rect7"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!--================Header Menu Area =================-->
+    <header class="main_menu_area">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">
+                <img class="navbar-logo" src="/assets/img/Invariant-logo.png" alt="Invariant Telecom">
+                <!-- {{ site.title }} -->
+            </a>
+            <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    {% assign nav_list = site.navigation %}
+                    {% include nav_list %}
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--==============End Header Menu Area ===============-->
+
+    <!-- DEFAULT CONTENT AREA -->
+    {{ content }}
+    <!-- END OF DEFAULT CONTENT AREA -->
+
+    <!--================Footer Area =================-->
+    <footer class="footer_area">
+        <div class="footer_widget_area">
+            <div class="footer_widget_blur">
+                <div class="container">
+                    <div class="row footer_widget_top">
+                        <div class="col-md-7">
+                            <h2>Ready to work with us?</h2>
+                            <!-- <p>Supplementary line here that provides more detail</p> -->
+                        </div>
+                        <div class="col-md-5">
+                            <a class="solid_btn_thin" href="/contact">Contact us</a>
+                            <a class="learn_more_btn" href="/services">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="row footer_widget_middle">
+                        <div class="col-md-4 col-sm-6 col-xs-6 offering">
+                            <ul>
+                                <li class="f_middle_ul_title">Site Links</li>
+                                {% assign site_links = site.navigation %}
+                                {% include site_links %}
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6 company">
+                            <ul>
+                                <li class="f_middle_ul_title">Company</li>
+                                <li>
+                                    <a href="/contact">Contact</a>
+                                </li>
+                                <li>
+                                    <ul class="f_career">
+                                        <li>
+                                            <a href="/job-offering">Job Offering
+                                                <span>We're hiring!</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/internship">Internship</a>
+                                        </li>
+                                        <li>
+                                            <a href="/life-at-invariant">Life at Invariant</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/media">Media</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <aside class="f_widget f_subs_widget">
+                                <div class="f_title">
+                                    <h3>Subscribe to our Newsletter</h3>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Your e-mail address here" aria-label="Your e-mail address here">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-secondary submit_btn_side" type="button">GO!</button>
+                                    </span>
+                                </div>
+                                <div class="social-media">
+                                    <ul>
+                                        {% assign social_links = site.social_links %}
+                                        {% include social_links %}
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li class="float-left">
+                            <a href="/">&copy; {{ site.title }}
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                            </a>
+                        </li>
+                        <li class="float-left">
+                            <a href="mailto:{{ site.office.email.info }}">{{ site.office.email.info }}</a>
+                        </li>
+                        <!-- <li class="float-right">
+                            <h5 class="float-right">
+                                This template is made with
+                                <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            </h5>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--==============End Footer Area ===============-->
+
+    <!--================Back To Top Area =================-->
+    <div class="back-to-top hide">
+        <img src="/assets/img/icon/back-to-top.png" alt="">
+    </div>
+    <!--==============End Back To Top Area ===============-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+    <!-- Rev slider js -->
+    <script src="/assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="/assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="/assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="/assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="/assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="/assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="/assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="/assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <!-- Extra plugin css -->
+    <script src="/assets/vendors/counterup/jquery.waypoints.min.js"></script>
+    <script src="/assets/vendors/counterup/jquery.counterup.min.js"></script>
+    <script src="/assets/vendors/counterup/apear.js"></script>
+    <script src="/assets/vendors/counterup/countto.js"></script>
+    <script src="/assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/assets/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/smoothscroll.js"></script>
+    <script src="/assets/vendors/circle-bar/circle-progress.min.js"></script>
+    <script src="/assets/vendors/circle-bar/plugins.js"></script>
+    <script src="/assets/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/vendors/isotope/isotope.pkgd.min.js"></script>
+
+    <script src="/assets/js/circle-active.js"></script>
+    <script src="/assets/js/theme.js"></script>
+</body>
+
+</html>

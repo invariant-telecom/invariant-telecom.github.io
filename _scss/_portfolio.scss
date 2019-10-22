@@ -1,0 +1,107 @@
+/* Portfolio Area css
+============================================================================================ */
+.portfolio_area {
+  border-bottom: 2px solid #fff;
+}
+.portfolio_filter {
+  padding: 50px 0px 70px 0px;
+  ul {
+    li {
+      display: inline-block;
+      margin-right: 40px;
+      a {
+        font-size: 18px;
+        font-family: $rob;
+        font-weight: bold;
+        color: #7e8d9c;
+        @include transition;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+      &:hover,
+      &.active {
+        a {
+          color: $dip;
+        }
+      }
+    }
+  }
+}
+.wd_25 {
+  width: 25%;
+}
+.wd_50 {
+  width: 50%;
+  @include tablet {
+    width: 100%;
+  }
+}
+.ms_portfolio_inner {
+  overflow: hidden;
+  .ms_p_item {
+    float: left;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba($color: $dip_old, $alpha: 0.6);
+      top: 100%;
+      transition: 0.5s ease;
+    }
+    &:hover {
+      &::before {
+        top: 0;
+      }
+      .overlay-content {
+        h3,
+        p,
+        a {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+    img {
+      width: 100%;
+    }
+    .overlay-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+      width: 80%;
+      h3,
+      p,
+      a {
+        color: $white;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 0.3s ease;
+      }
+      h3 {
+        margin-bottom: 15px;
+        font-size: 36px;
+      }
+      p {
+        transition-delay: 0.1s;
+        margin-bottom: 30px;
+        font-size: 18px;
+        @include tablet {
+          font-size: 15px;
+        }
+      }
+      a {
+        transition-delay: 0.2s;
+      }
+    }
+  }
+}
+/* End Portfolio Area css
+============================================================================================ */

@@ -1,0 +1,52 @@
+/*font Variables*/
+$lato: 'Lato', sans-serif;
+$rob: "adelle-sans", 'Lato', sans-serif;
+$open: 'Open Sans', sans-serif;
+// Roboto
+/*Color Variables*/
+
+$accentRed: #F16B6D;
+$accentBlue: #149FC5;
+$baseColor: #97ccfe;
+$white: #ffffff;
+$lightGay: #dddddd;
+$dip_old: #0b1033;
+$dip: #293055;
+$dip_1: #3c4379;
+$dip_2: #61689b;
+$dip_3: #74799c;
+$gray: #3f3f3f;
+$gray_old: #757575;
+$pfont: #4e656d;
+$pfont_lite: #d2dce0;
+$pfont_old: #7c8d93;
+$pfont_2: #5B5B5B;
+$bfont: #434661;
+
+
+
+// Mixins
+@mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+.col-md-offset-right-1,.col-lg-offset-right-1{
+    margin-right: 8.33333333%;
+}
+// Font family link
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,900');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700');
+
+//@font-face {
+//    font-family: "ralH";
+//    src: url(../fonts/theme-font/Arial.ttf.woff);
+//}
