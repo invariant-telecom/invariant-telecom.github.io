@@ -26,9 +26,9 @@ navigation:
     target: _blank
 social_links:
   - title: pinterest
-    url: /
+    url: https://www.pinterest.com/invarianttelecom/
   - title: facebook
-    url: /
+    url: https://www.facebook.com/invarianttelecom/
   - title: twitter
     url: /
   - title: dribbble
@@ -36,7 +36,7 @@ social_links:
   - title: behance
     url: /
   - title: linkedin
-    url: /
+    url: https://www.linkedin.com/company/invarianttelecom/
 office:
   address:
     single_line: 43 Mohakhali C/A, Aqua Tower (Level-3 & 8), Dhaka-1212, Bangladesh

@@ -1,7 +1,7 @@
 ---
 name: Md. Kausar Ahmed
 designation: Front-End Developer 
-catagory: key-member
+catagory: no
 image: /assets/img/team/devs/kausar_ahmed.jpg
 links:
   - title: linkedin

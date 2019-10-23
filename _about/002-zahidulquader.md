@@ -1,6 +1,6 @@
 ---
 name: Zahidul Quader
-designation: Director
+designation: Head of IT
 catagory: leader
 image: /assets/img/team/people/zahidul_quader.png
 links:

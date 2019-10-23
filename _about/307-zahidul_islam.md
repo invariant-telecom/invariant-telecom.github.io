@@ -1,7 +1,7 @@
 ---
 name: Zahidul Islam
 designation: DevOps Automation Engineer
-catagory: key-member
+catagory: no
 image: /assets/img/team/devs/zahidul_islam.jpg
 links:
   - title: linkedin
