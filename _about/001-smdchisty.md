@@ -1,7 +1,7 @@
 ---
 name: Jashimuddin Chisty
 designation: Managing Director
-catagory: leader
+catagory: md
 image: /assets/img/team/people/jashimuddin_chisty.png
 links:
   - title: linkedin

@@ -69,6 +69,43 @@ subtitle: Get to know us
     </div>
 </section> -->
 
+<!--================Management Area =================-->
+<section class="about_team">
+    <div class="container">
+        <h3 class="team_title">Management</h3>
+        <div class="row team_inner justify-content-center">
+            {% for leader in site.about %}
+                {% if leader.catagory == 'md' %}
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="team_item">
+                            <div class="team_img">
+                                <img src="{{ leader.image }}" alt="">
+                                <div class="team_links">
+                                    <div class="media_icons">
+                                        <ul>
+                                            {% for item in leader.links %}
+                                                <li class="f_social_icon">
+                                                    <a href="{{ item.url }}" target="_blank">
+                                                        <i class="fa fa-{{ item.title | downcase }}"></i>
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team_name">
+                                <h4>{{ leader.name }}</h4>
+                                <p>{{ leader.designation }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--==============End Management Area ===============-->
 <!--================Leadership Area =================-->
 <section class="about_team">
     <div class="container">
@@ -85,9 +122,11 @@ subtitle: Get to know us
                                         <ul>
                                             {% for item in leader.links %}
                                                 <li class="f_social_icon">
+                                                    {% if item.url  != "" %}
                                                     <a href="{{ item.url }}" target="_blank">
                                                         <i class="fa fa-{{ item.title | downcase }}"></i>
                                                     </a>
+                                                    {% endif %}
                                                 </li>
                                             {% endfor %}
                                         </ul>
