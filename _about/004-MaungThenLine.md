@@ -5,5 +5,5 @@ catagory: leader
 image: /assets/img/team/people/PM.png
 links:
   - title: linkedin
-    url: 
+    url: "no"
 ---

@@ -122,7 +122,7 @@ subtitle: Get to know us
                                         <ul>
                                             {% for item in leader.links %}
                                                 <li class="f_social_icon">
-                                                    {% if item.url  != "" %}
+                                                    {% if item.url  != "no" %}
                                                     <a href="{{ item.url }}" target="_blank">
                                                         <i class="fa fa-{{ item.title | downcase }}"></i>
                                                     </a>
