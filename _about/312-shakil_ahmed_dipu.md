@@ -1,6 +1,6 @@
 ---
 name: Md. Shakil Ahmed
-designation: Junior Quality Assurance
+designation: Junior Quality Assurance Engineer
 catagory: key-member
 image: /assets/img/team/devs/md_skhakil_ahmed.jpg
 links:

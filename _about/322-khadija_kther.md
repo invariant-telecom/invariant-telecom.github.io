@@ -1,10 +1,9 @@
 ---
-name: Khadija Akther
+name: Khadeja Akter
 designation: Content Writer
 catagory: key-member
 image: /assets/img/team/devs/khadija_kther.jpg
 links:
   - title: linkedin
-    url: www.linkedin.com/in/khadeja-akter
+    url: https://www.linkedin.com/in/khadeja-akter/
 ---
-
