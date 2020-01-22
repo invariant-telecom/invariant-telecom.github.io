@@ -6,7 +6,5 @@ image: /assets/img/team/devs/khadija_kther.jpg
 links:
   - title: linkedin
     url: www.linkedin.com/in/khadeja-akter
-  - title: github
-    url: 
 ---
 
