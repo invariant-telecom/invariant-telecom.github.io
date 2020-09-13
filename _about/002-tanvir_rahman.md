@@ -1,6 +1,6 @@
 ---
 name: TANVIR RAHMAN
-designation: Project Manager & Product Owner
+designation: Product Owner | Project Manager
 catagory: leader
 image: /assets/img/team/devs/tanvir_rahman.jpg
 links:
